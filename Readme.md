@@ -23,9 +23,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#framework-used">Framework Used</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -44,10 +41,17 @@
 
 A web app to test and improve your typing speed. It consist of a text area and timmer to calculate the time taken to complete the given sentence.
 
+## Technologies Used
+- Vanilla Javascript
+- CSS
+- Html 5
+- Node
+- Docker
+
 ## ✨ Main Features
 - 🖥️ Responsive
 - 🌈 Color signal
-<!-- - 🅰️ 6000 text samples -->
+<!-- - 🅰️samples -->
 
 
 
@@ -57,7 +61,6 @@ A web app to test and improve your typing speed. It consist of a text area and t
 ### Framework Used
 
 * [Bootstrap](https://getbootstrap.com)
-<!-- * [JQuery](https://jquery.com) -->
 
 <br>
 
@@ -73,11 +76,19 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
 
+2. Run Docker container
+  (For Better portability)
+   ```sh
+   docker build .
+   ```
+    ```sh
+   docker tag <imageID> deespider/typespeed
+   ```
+    ```sh
+   docker run-p 8000:8000 deespider/typespeed
+   ```
+    Now app will run in this port.
 
 ## 📈Usage
 
